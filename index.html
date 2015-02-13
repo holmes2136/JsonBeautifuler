@@ -26,8 +26,19 @@
 
 
          $("#json_input").on('change', function (e) {
-             var json = $.parseJSON($("#json_input").val());
-             $("#result").html(JSONTree.create(json));
+
+             var json;
+
+             try {
+
+                 json = $.parseJSON($("#json_input").val());
+                 $("#result").html(JSONTree.create(json));
+
+             } catch (ex) {
+                 $("#result").html('<p class=error>SyntaxError:&nbsp;&nbsp;&nbsp;' + ex + '</p>');
+             }
+
+            
          });
 
     </script>

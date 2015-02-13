@@ -40,3 +40,18 @@ border: solid 1px #555;
 border-radius: 2px;
 resize: none;
 }
+
+.error {
+background: #2e3436;
+border-radius: 3px;
+color: #eeeeec;
+padding: 0 4px;
+text-shadow: none;
+font-family: 'DejaVu Sans Mono','Courier New',monospace;
+font-size: 68.8%;
+font-size: 11px;
+line-height: 17px;
+word-wrap: break-word;
+padding-top: 10px;
+}
+
